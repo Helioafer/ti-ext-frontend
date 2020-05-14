@@ -38,7 +38,7 @@ class Contact extends BaseComponent
     {
         $this->location = Location::current();
 
-        $this->subjects = ['General enquiry', 'Comment', 'Technical Issues'];
+        $this->subjects = [lang('igniter.frontend::default.contact.text_general_enquiry'), lang('igniter.frontend::default.contact.text_comment'), lang('igniter.frontend::default.contact.text_technical_issues')];
     }
 
     public function onSubmit()
